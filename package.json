@@ -1,0 +1,25 @@
+{
+  "name": "convertlbs",
+  "version": "1.0.0",
+  "description": "Convert pounds to other units and returns grams, kilograms, and ounces as a JSON object.",
+  "main": "convertlbs.cjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "commonjs",
+  "keywords": [
+    "convert",
+    "lbs",
+    "convertlbs",
+    "convertunits"
+  ],
+  "author": "Andrew Ball <andrew@nordicgame.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hi5a/convertlbs/issues"
+  },
+  "funding": {
+    "type": "buymeacoffee",
+    "url": "https://buymeacoffee.com/hi5a"
+  }
+}
