@@ -1,6 +1,6 @@
 {
   "name": "convertlbs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert pounds to other units and returns grams, kilograms, and ounces as a JSON object.",
   "main": "convertlbs.cjs",
   "scripts": {
@@ -22,7 +22,7 @@
     "type": "buymeacoffee",
     "url": "https://buymeacoffee.com/hi5a"
   },
-  "dependencies": {
+  "devDependencies": {
     "jest": "^29.5.0"
   }
 }
