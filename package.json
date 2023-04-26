@@ -4,7 +4,7 @@
   "description": "Convert pounds to other units and returns grams, kilograms, and ounces as a JSON object.",
   "main": "convertlbs.cjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "type": "commonjs",
   "keywords": [
@@ -21,5 +21,8 @@
   "funding": {
     "type": "buymeacoffee",
     "url": "https://buymeacoffee.com/hi5a"
+  },
+  "dependencies": {
+    "jest": "^29.5.0"
   }
 }
