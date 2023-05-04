@@ -27,6 +27,7 @@
     "url": "https://buymeacoffee.com/hi5a"
   },
   "devDependencies": {
+    "docsify-cli": "^4.4.4",
     "jest": "^29.5.0"
   }
 }
