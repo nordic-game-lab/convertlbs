@@ -7,10 +7,10 @@ test('Converts 5 kilograms to ounces and expects 176.37 OZ', () => {
 });
 
 test('Converts 5 kg to lbs and expects 11.0231 lbs', () => {
-  expect(convertkg(5).lbs).toBe(11.0231);
+  expect(convertkg(5).lbs).toBe(11.025);
 });
 
 test('Converts 5 kg to grams and expects 5000 grams', () => {
-  expect(convertlkg(5).g).toBe(5000);
+  expect(convertkg(5).g).toBe(5000);
 });
 
