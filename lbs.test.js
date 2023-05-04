@@ -1,4 +1,5 @@
-const convertlbs = require('./convertlbs');
+const convert = require('./convertlbs');
+const convertlbs = convert.convertlbs;
 
 test('Converts 5 pounds to ounces and expects 80 OZ', () => {
   expect(convertlbs(5).oz).toBe(80);

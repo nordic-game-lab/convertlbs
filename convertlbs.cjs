@@ -6,4 +6,28 @@ function convertlbs(lbs) {
     };
 };
 
-module.exports = convertlbs;
+function convertoz(oz) {
+    return{
+        lbs: oz / 16,
+        kg: oz / 35.274,
+        g: oz * 28.35
+    };
+};
+
+function convertkg(kg) {
+    return{
+        lbs: kg * 2.205,
+        g: kg * 1000,
+        oz: kg * 35.274
+    };
+};
+
+function convertg(g){
+    return{
+        lbs: g / 453.6,
+        kg: g / 1000,
+        oz: g / 28.35
+    };
+};
+
+module.exports = {convertlbs, convertoz, convertkg, convertg};
