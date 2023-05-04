@@ -24,8 +24,10 @@ function convertkg(kg) {
 
 function convertg(g){
     return{
-        lbs: 
-    }
-}
+        lbs: g / 453.6,
+        kg: g / 1000,
+        oz: g / 28.35
+    };
+};
 
-module.exports = {convertlbs, convertoz, convertkg};
+module.exports = {convertlbs, convertoz, convertkg, convertg};
