@@ -19,8 +19,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Codecov
-      uses: codecov/codecov-action@v3.1.3
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
@@ -28,3 +26,5 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm test
+    - name: Codecov
+      uses: codecov/codecov-action@v3.1.3
