@@ -28,24 +28,10 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npm run bump
-      
-  upload-changelog:
-   needs: bump-changelog
-   runs-on: ubuntu-latest
-   steps:
-    - name: Upload to Latest Release Action
-  # You may pin to the exact commit or the version.
-  # uses: keith-gamble/upload-to-latest-release@a6ff5f6aa881a38f80b19913e31b996703855fca
-      uses: keith-gamble/upload-to-latest-release@v1.0.0
-      with:
-        name: changelog
-    # Path to the file to upload
-        path: ./CHNGELOG.md
-        token: ${{secrets.BOT_TOKEN}}
 
 
   publish-npm:
-    needs: upload-changelog
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
