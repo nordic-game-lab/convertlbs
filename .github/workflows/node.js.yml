@@ -45,14 +45,7 @@ jobs:
       - name: Changelog Creator
   # You may pin to the exact commit or the version.
   # uses: okcredit/changelog-creator-action@5433a77c77698724c119140fc98ddb831ed1d678
-        uses: okcredit/changelog-creator-action@v1.0.0
-        with:
-    # Defines the milestone for which change log needs to be generated. If not supplied last closed milestone will be used
-        milestone: # optional
-    # Defines if the action should result in a build failure, if an error was discovered
-        failOnError: # optional, default is false
-    # Defines the token to use to execute the git API requests with, uses `env.GITHUB_TOKEN` by default
-        token: # optional
+      - uses: okcredit/changelog-creator-action@v1.0.0
         env: 
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
       
