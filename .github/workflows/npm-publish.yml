@@ -45,7 +45,7 @@ jobs:
 
 
   publish-npm:
-    needs: build
+    needs: upload-changelog
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
