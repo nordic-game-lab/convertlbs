@@ -32,20 +32,4 @@ jobs:
         token: ${{secrets.CODECOV_TOKEN}}
         files: ./coverage/clover.xml
 
-  bump-changelog:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm ci
-      - run: npm run bump
-      - name: Changelog Creator
-  # You may pin to the exact commit or the version.
-  # uses: okcredit/changelog-creator-action@5433a77c77698724c119140fc98ddb831ed1d678
-        uses: okcredit/changelog-creator-action@v1.0.0
-        env: 
-          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
       
