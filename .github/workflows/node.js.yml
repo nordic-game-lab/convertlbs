@@ -47,7 +47,7 @@ jobs:
           git config --local user.email "134294320+nglbot@users.noreply.github.com"
           git config --local user.name "nglbot"   
       - name: github login
-        run: gh login --with-token < ${{ secrets.BOT_TOKEN }}
+        run: gh login --with-token 
         env: 
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}     
       - name: Commit and push changes
