@@ -1,6 +1,6 @@
 {
   "name": "convertlbs",
-  "version": "2.2.1",
+  "version": "2.2.0",
   "description": "Convert pounds to other units and returns grams, kilograms, and ounces as a JSON object.",
   "main": "convertlbs.js",
   "scripts": {
