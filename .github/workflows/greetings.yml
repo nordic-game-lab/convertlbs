@@ -1,0 +1,16 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: "Thanks for opening this issue. A Nordic Game Lab team member should be by to give feedback soon. In the meantime, please check out the [contributing guidelines](https://github.com/nordic-game-lab/convertlbs/blob/main/CONTRIBUTING.md)."
+        pr-message: "Thanks for creating a pull request! A maintainer will review your changes shortly. Please don't be discouraged if it takes a while."
