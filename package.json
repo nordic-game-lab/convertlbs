@@ -20,7 +20,7 @@
     "grams"
   ],
   "author": "Andrew Ball <andrew@nordicgame.org>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nordic-game-lab/convertlbs/issues"
   },
