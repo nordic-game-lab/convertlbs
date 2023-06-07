@@ -28,7 +28,7 @@ jobs:
           committer_name: GitHub Actions
           committer_email: actions@github.com
           message: "chore(changelog): update changelog"
-          add: "changes/CHANGELOG"
+          add: "changes/CHANGELOG.md"
           push: --force
 
 
